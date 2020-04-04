@@ -15,20 +15,6 @@ a:active {
     color: #666;
 }
 
-.menu a {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    display: block;
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-}
-
-.menu a:hover {
-    color: #fff;
-    background-color: #38f;
-}
-
 body{
     background-color: #252527 ;
 }
@@ -43,8 +29,8 @@ header {
     background: url(./images/logo.svg) no-repeat;
     background-position: 15px center;
     background-size: 30px;
-    background-color: #fff;
-    margin-bottom: 10px;
+    background-color: burlywood;
+    border-bottom: 1px solid #252527;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -52,39 +38,22 @@ header {
     z-index: 99;
 }
 .left h1{
-    font-size:22px;
+    font-size: 22px;
     float: left;
     margin-left: 60px;
     height: 100%;
     line-height: 50px;
 }
-.right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: right;
-    width: 30px;
-    height: 30px;
-    background-color: #e8e1dd;
-    margin-right: 15px;
-    cursor: pointer;
-}
-.right img {
-    width: 20px;
-}
-.menu {
-    display: none;
-    position: fixed;
-    right: 15px;
-    top: 47px;
-    background-color: #fff;
-    border: #999 1px solid;
-    z-index: 99;
+
+.left h1>span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 16px;
 }
 
-.menu li {
-    display: block;
-    text-align: center;
+.left .heart {
+    color: red;
 }
 
 .container{
@@ -103,13 +72,14 @@ header {
     align-items: center;
     background-color: #fff;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-    margin: 10px 30px;
+    margin: 25px 30px 0 30px;
     border-radius: 10px;
 }
 
 .card .content {
     width: 100%;
 }
+
 .card .head_wrap {
     width: 100%;
     text-align: center;
@@ -144,8 +114,8 @@ header {
 .card .head p{
     width: 50%;
     padding: 10px;
-    background-color: #f9e9a2;
-    border-bottom: #252527 2px solid;
+    background-color: burlywood;
+    border-bottom: 1px solid #252527 ;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -179,8 +149,8 @@ header {
 }
 footer {
     width: 100%;
-    background-color: #38f;
-    margin-top: 10px;
+    background-color: #000;
+    margin-top: 25px;
 }
 footer ul {
     display: flex;
@@ -190,23 +160,26 @@ footer ul {
 }
 footer li {
     height: 40px;
-    color: #fff;
+    color: burlywood;
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 40px;
-    padding: 0 10px;
+    padding: 0 20px;
+    border-right: 1px solid burlywood;
 }
-footer li:nth-of-type(1) {
-    padding-left: 0;
+
+footer li:nth-of-type(5),
+:nth-of-type(2),
+:nth-of-type(3) {
+    border: none;
 }
-footer li:nth-of-type(3) {
-    padding-right: 0;
-}
-footer li:nth-of-type(1),
-footer li:nth-of-type(2) {
-border-right: 1px solid #e8e1dd;
+
+.qv {
+    height: 100%;
+    color: #fff;
+    background-color: #38f;
 }
 
 .mask {
@@ -237,8 +210,9 @@ border-right: 1px solid #e8e1dd;
     }
     .card {
         width: calc(100% - 30px);
-        margin: 5px 0;
+        margin: 15px 0 0 0;
     }
+
     .mask {
         flex-direction: column;
         justify-content: center;
@@ -246,5 +220,30 @@ border-right: 1px solid #e8e1dd;
     .mask_wrap {
         width: 50%;
         margin: 15px;
+    }
+
+    .left h1>span {
+        display: none;
+    }
+
+    footer ul .none {
+        display: none;
+    }
+
+    footer li:nth-of-type(2) {
+        border-right: 1px solid burlywood;
+}
+
+    footer li:nth-of-type(4) {
+        border: none;
+    }
+
+    footer {
+        margin-top: 15px;
+    }
+
+    footer li {
+        font-size: 16px;
+        padding: 0 10px;
     }
 }
