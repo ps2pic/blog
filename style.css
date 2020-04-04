@@ -119,24 +119,29 @@ header {
     font-size: 20px;
 }
 
-.super {
+.card .head p span {
     padding: 0 2px;
     display: inline-block;
     vertical-align: middle;
-    color: #008000;
     font-size: 16px;
 }
 
-p .super1 {
+.super1 {
     color: #f00;
 }
 
-p .super2 {
+.super2 {
     color: #f40;
 }
 
-p .super3 {
+.super3 {
     color: #f40;
+}
+
+.super4,
+.super5,
+.super6 {
+    color: #008000;
 }
 
 .content {
