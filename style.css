@@ -123,20 +123,20 @@ header {
     padding: 0 2px;
     display: inline-block;
     vertical-align: middle;
-    color: green;
+    color: #008000;
     font-size: 16px;
 }
 
 p .super1 {
-    color: red;
+    color: #f00;
 }
 
 p .super2 {
-    color: orangered;
+    color: #f40;
 }
 
 p .super3 {
-    color: orangered;
+    color: #f40;
 }
 
 .content {
