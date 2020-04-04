@@ -111,7 +111,7 @@ header {
 
 .card .head p{
     width: 50%;
-    padding: 9px 10px 10px;
+    padding: 10px;
     background-color: burlywood;
     border-bottom: 1px solid #252527 ;
     border-radius: 5px;
@@ -122,9 +122,21 @@ header {
 .super {
     padding: 0 2px;
     display: inline-block;
-    vertical-align: super;
+    vertical-align: middle;
     color: green;
     font-size: 16px;
+}
+
+.super1 {
+    color: red;
+}
+
+.super2 {
+    color: orangered;
+}
+
+.super3 {
+    color: orangered;
 }
 
 .content {
