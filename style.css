@@ -127,15 +127,15 @@ header {
     font-size: 16px;
 }
 
-.super1 {
+p .super1 {
     color: red;
 }
 
-.super2 {
+p .super2 {
     color: orangered;
 }
 
-.super3 {
+p .super3 {
     color: orangered;
 }
 
