@@ -27,7 +27,7 @@ header {
     background: url(./images/logo.svg) no-repeat;
     background-position: 15px center;
     background-size: 30px;
-    background-color: burlywood;
+    background-color: rgb(222, 184, 135);
     border-bottom: 1px solid #252527;
     overflow: hidden;
     display: flex;
@@ -306,6 +306,9 @@ footer li:nth-of-type(5),
     header {
         position: sticky;
         top: 0;
+        background-color: rgba(222, 184, 135, 0.8);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
     }
 
     .container{
