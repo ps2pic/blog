@@ -306,9 +306,7 @@ footer li:nth-of-type(5),
     header {
         position: sticky;
         top: 0;
-        background-color: rgba(222, 184, 135, 0.8);
-        backdrop-filter: saturate(180%) blur(20px);
-        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        background-color: rgb(222, 184, 135);
     }
 
     .container{
