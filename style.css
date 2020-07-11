@@ -35,6 +35,7 @@ header {
     align-items: center;
     z-index: 99;
 }
+
 .left h1{
     font-size: 22px;
     float: left;
@@ -298,6 +299,10 @@ footer li:nth-of-type(5),
         width: calc(100% - 30px);
         margin: 15px 0 0 0;
     }
+    
+    .left h1{
+    font-size: 20px;
+}
 
     .left h1>span {
         display: none;
