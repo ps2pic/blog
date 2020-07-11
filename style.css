@@ -126,24 +126,6 @@ header {
     font-size: 16px;
 }
 
-.super1 {
-    color: #f00;
-}
-
-.super2 {
-    color: #f40;
-}
-
-.super3 {
-    color: #f40;
-}
-
-.super4,
-.super5,
-.super6 {
-    color: #008000;
-}
-
 .content {
     padding: 20px;
 }
