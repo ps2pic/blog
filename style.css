@@ -288,10 +288,6 @@ footer li:nth-of-type(5),
     header {
         position: sticky;
         top: 0;
-<<<<<<< HEAD
-=======
-        background-color: rgb(222, 184, 135);
->>>>>>> 586cf7eebb98103d460b260dc32eed597c58b4f7
     }
 
     .container{
