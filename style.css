@@ -34,6 +34,7 @@ header {
     align-items: center;
     z-index: 99;
 }
+
 .left h1{
     font-size: 22px;
     float: left;
@@ -123,24 +124,6 @@ header {
     display: inline-block;
     vertical-align: middle;
     font-size: 16px;
-}
-
-.super1 {
-    color: #f00;
-}
-
-.super2 {
-    color: #f40;
-}
-
-.super3 {
-    color: #f40;
-}
-
-.super4,
-.super5,
-.super6 {
-    color: #008000;
 }
 
 .content {
@@ -305,6 +288,10 @@ footer li:nth-of-type(5),
     header {
         position: sticky;
         top: 0;
+<<<<<<< HEAD
+=======
+        background-color: rgb(222, 184, 135);
+>>>>>>> 586cf7eebb98103d460b260dc32eed597c58b4f7
     }
 
     .container{
@@ -314,6 +301,10 @@ footer li:nth-of-type(5),
         width: calc(100% - 30px);
         margin: 15px 0 0 0;
     }
+    
+    .left h1{
+    font-size: 20px;
+}
 
     .left h1>span {
         display: none;
