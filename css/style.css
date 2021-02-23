@@ -135,7 +135,12 @@ header{
 #home button:hover{
     background: chartreuse;
     border-radius: 5px;
-    color: #fff;
+}
+#home button a:link,
+#home button a:visited,
+#home button a:hover,
+#home button a:active{
+    color: #000;
 }
 
 /* what */
