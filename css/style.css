@@ -1,0 +1,226 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.m-heading{
+    font-size: 1.5rem;
+    margin: 0.75rem 0;
+}
+.primary-color{
+    color: chartreuse;
+}
+
+/* navbar */
+nav{
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+    color: #eee;
+}
+#navbar .nav-logo{
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+
+#navbar .nav-logo i {
+    margin-right: 0.5rem;
+}
+#navbar .nav-logo span{
+    color: chartreuse;
+}
+#navbar .nav-logo h1{
+    /* font-size: 2rem; */
+    letter-spacing: 0.1rem;
+}
+#navbar .nav-menu ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#navbar .nav-menu ul a{
+    font-weight: 600;
+    color: #eee;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+#navbar .nav-menu ul li:last-child a{
+    margin-right: 0;
+}
+
+#navbar .nav-menu ul a:hover{
+    color: #333;
+    background: chartreuse;
+}
+#navbar .nav-menu ul .current{
+    background: #222;
+}
+
+/* header */
+header{
+    position: relative;
+}
+
+#home{
+    height: 100vh;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position:absolute;
+    background: url(../image/header-photo.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#home h1{
+    font-size: 4rem;
+    letter-spacing: 0.25rem;
+}
+#home h1 span{
+    color: chartreuse;
+}
+
+#home h1 .break{
+    display: none;
+}
+#home p{
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+}
+#home p .break{
+    display: none;
+}
+#home button{
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+}
+#home a{
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+#home button:hover{
+    background: chartreuse;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* what */
+#what{
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+#what .what-items{
+    display: flex;
+    max-width: 960px;
+    flex-wrap: wrap;
+}
+#what .what-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.33% - 2rem);
+    padding: 1.5rem;
+    margin: 1rem;
+    background: #eee;
+    border-radius: 1rem;
+}
+#what .what-item i{
+    background: chartreuse;
+    border-radius: 50%;
+    padding: 0.75rem;
+}
+
+/* Contact */
+#contact{
+    background: #333;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 960px;
+    box-sizing: border-box;
+}
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-left: 1rem;
+    text-align: left;
+    flex: 1;
+}
+.contact-content h3{
+    margin: 1rem 0;
+    color: #fff;
+    border-bottom: 2px solid chartreuse;
+    padding-bottom: 0.5rem;
+}
+.contact-content li{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.contact-info i{
+    color: chartreuse;
+    margin-right: 0.5rem;
+}
+.contact-info p{
+    color: #ddd;
+}
+.contact-img{
+    margin: 0 1rem;
+    flex: 2;
+    background: url(../image/contact_bg.jpg) no-repeat center 30%/cover;
+}
+
+/* footer */
+#footer{
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
+#footer p{
+    padding: 0.5rem 0;
+    border-top: 2px solid #666;
+}

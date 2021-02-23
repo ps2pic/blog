@@ -1,0 +1,86 @@
+/* navbar */
+#navbar{
+    padding: 0 0.5rem;
+    justify-content: center;
+}
+#navbar .nav-logo{
+    display: none;
+}
+#navbar .nav-menu ul a{
+    font-weight: 600;
+    color: #eee;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+}
+
+/* home */
+#home h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: 1.25rem;
+}
+#home h1 .break{
+    display: block;
+}
+#home p{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+#home p .break{
+    display: block;
+}
+#home p span{
+    display: none;
+}
+
+/* what */
+#what .what-items{
+    display: flex;
+    flex-direction: column;
+}
+#what .what-items:first-child{
+    margin-top: 1rem;
+}
+#what .what-items:last-child{
+    margin-bottom: 1rem;
+}
+#what .what-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 3rem);
+    padding: 1rem;
+    margin: 0.5rem 1.5rem;
+    background: #eee;
+    border-radius: 1rem;
+}
+#what .what-item .item-text{
+    text-align: left;
+}
+#what .what-item .item-text h3{
+    margin-top: 0rem;
+}
+#what .what-item i{
+    margin-right: 1rem;
+}
+
+/* contact */
+#container{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+.contact-content{
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+.contact-content h3{
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+.contact-img{
+    display: none;
+}
