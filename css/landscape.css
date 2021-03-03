@@ -1,0 +1,11 @@
+#home img {
+    width: 65px;
+    /* margin-bottom: 0.25rem; */
+    margin-top: -3rem;
+}
+#home h1{
+    font-size: 3.5rem;
+}
+#home p{
+    display: none;
+}

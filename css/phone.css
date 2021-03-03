@@ -16,15 +16,18 @@
 }
 
 /* home */
+#home img {
+    margin-bottom: 1rem;
+}
 #home h1{
-    font-size: 3rem;
+    font-size: 3.75rem;
     line-height: 3.5rem;
     letter-spacing: 0.25rem;
     margin-bottom: 1.25rem;
     text-align: center;
 }
-#home h1 .break{
-    display: block;
+#home h1 span{
+    display: none;
 }
 #home p{
     font-size: 1rem;
