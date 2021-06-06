@@ -1,36 +1,42 @@
 /* reset */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.m-heading{
+
+.m-heading {
     font-size: 1.5rem;
     margin: 0.75rem 0;
 }
-.primary-color{
+
+.primary-color {
     color: chartreuse;
 }
 
 /* navbar */
-nav{
+nav {
     background: #000;
     position: sticky;
     top: 0;
     z-index: 1;
 }
-#navbar{
+
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +45,8 @@ nav{
     margin: 0 auto;
     color: #eee;
 }
-#navbar .nav-logo{
+
+#navbar .nav-logo {
     display: flex;
     align-items: center;
     padding: 0.25rem 0;
@@ -48,18 +55,22 @@ nav{
 #navbar .nav-logo img {
     width: 30px;
 }
-#navbar .nav-logo span{
+
+#navbar .nav-logo span {
     color: chartreuse;
 }
-#navbar .nav-logo h1{
+
+#navbar .nav-logo h1 {
     margin-left: 0.3rem;
 }
-#navbar .nav-menu ul{
+
+#navbar .nav-menu ul {
     display: flex;
     align-items: center;
     height: 100%;
 }
-#navbar .nav-menu ul a{
+
+#navbar .nav-menu ul a {
     font-weight: 600;
     color: #eee;
     display: inline-block;
@@ -67,24 +78,26 @@ nav{
     padding: 0.5rem;
     margin: 0.5rem;
 }
-#navbar .nav-menu ul li:last-child a{
+
+#navbar .nav-menu ul li:last-child a {
     margin-right: 0;
 }
 
-#navbar .nav-menu ul a:hover{
+#navbar .nav-menu ul a:hover {
     color: #333;
     background: chartreuse;
 }
-#navbar .nav-menu ul .current{
+
+#navbar .nav-menu ul .current {
     background: #222;
 }
 
 /* header */
-header{
+header {
     position: relative;
 }
 
-#home{
+#home {
     height: 100vh;
     color: #fff;
     background: rgba(0, 0, 0, 0.4);
@@ -93,61 +106,60 @@ header{
     justify-content: center;
     align-items: center;
 }
-#home::before{
+
+#home::before {
     content: "";
-    position:absolute;
+    position: absolute;
     background: url(../image/header-photo.jpg) no-repeat center center/cover;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
 
-#home img {
-    width: 85px;
-    /* margin-bottom: 0.25rem; */
-    margin-top: -3rem;
-}
-
-#home h1{
+#home h1 {
     font-size: 4.5rem;
     letter-spacing: 0.25rem;
     color: chartreuse;
     margin-bottom: 1rem;
 }
-#home h1 span{
+
+#home h1 span {
     color: #fff;
 }
 
-#home p{
+#home p {
     font-size: 1.25rem;
     letter-spacing: 0.2rem;
     margin-bottom: 1.5rem;
 }
 
-#home button{
+#home button {
     border: none;
     border-radius: 5px;
     background: #fff;
 }
-#home a{
+
+#home a {
     font-size: 1.25rem;
     font-weight: 700;
     display: block;
     padding: 0.5rem 1rem;
 }
-#home button:hover{
+
+#home button:hover {
     background: chartreuse;
     border-radius: 5px;
 }
+
 #home button a:link,
 #home button a:visited,
 #home button a:hover,
-#home button a:active{
+#home button a:active {
     color: #000;
 }
 
 /* what */
-#what{
+#what {
     background: #333;
     display: flex;
     flex-direction: column;
@@ -156,12 +168,14 @@ header{
     margin: 0 auto;
 
 }
-#what .what-items{
+
+#what .what-items {
     display: flex;
     max-width: 960px;
     flex-wrap: wrap;
 }
-#what .what-item{
+
+#what .what-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,17 +185,19 @@ header{
     background: #eee;
     border-radius: 1rem;
 }
-#what .what-item i{
+
+#what .what-item i {
     background: chartreuse;
     border-radius: 50%;
     padding: 0.75rem;
 }
 
 /* Contact */
-#contact{
+#contact {
     background: #333;
 }
-#container{
+
+#container {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -189,7 +205,8 @@ header{
     max-width: 960px;
     box-sizing: border-box;
 }
-.contact-content{
+
+.contact-content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -198,37 +215,43 @@ header{
     text-align: left;
     flex: 1;
 }
-.contact-content h3{
+
+.contact-content h3 {
     margin: 1rem 0;
     color: #fff;
     border-bottom: 2px solid chartreuse;
     padding-bottom: 0.5rem;
 }
-.contact-content li{
+
+.contact-content li {
     display: flex;
     align-items: center;
     margin: 1rem 0;
 }
-.contact-info i{
+
+.contact-info i {
     color: chartreuse;
     margin-right: 0.5rem;
 }
-.contact-info p{
+
+.contact-info p {
     color: #ddd;
 }
-.contact-img{
+
+.contact-img {
     margin: 0 1rem;
     flex: 2;
     background: url(../image/contact_bg.jpg) no-repeat center 30%/cover;
 }
 
 /* footer */
-#footer{
+#footer {
     text-align: center;
     color: #fff;
     background: #000;
 }
-#footer p{
+
+#footer p {
     padding: 0.5rem 0;
     border-top: 2px solid #666;
 }
