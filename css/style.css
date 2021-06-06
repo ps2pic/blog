@@ -186,6 +186,7 @@ header {
     width: calc(33.33% - 2rem);
     padding: 1.5rem;
     margin: 1rem;
+    color: #333;
     background: #fff;
     border-radius: 1rem;
 }
