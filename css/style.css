@@ -189,6 +189,7 @@ header {
     color: #333;
     background: #fff;
     border-radius: 1rem;
+    border-bottom: 3px solid pink;
 }
 
 #what .what-item i {
