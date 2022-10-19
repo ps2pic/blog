@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #7bff00;
+    --primary-color: #f6e0a7;
 }
 
 /* reset */
@@ -123,18 +123,30 @@ header {
 #home h1 {
     font-size: 4.5rem;
     letter-spacing: 0.25rem;
-    color: var(--primary-color);
     margin-bottom: 1rem;
+    color: #fff;
 }
 
-#home h1 span {
-    color: #fff;
+#home h1 span.col {
+
+    background: linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #home p {
     font-size: 1.25rem;
     letter-spacing: 0.2rem;
     margin-bottom: 1.5rem;
+}
+
+#home p span {
+    padding: 0 15px;
+}
+
+#home p span:nth-of-type(odd) {
+    border-inline-end: 2px solid #fff;
 }
 
 #home button {
@@ -164,13 +176,27 @@ header {
 
 /* what */
 #what {
-    background: #222;
+    background: #090909;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 0 auto;
 
+}
+
+#what .l-heading {
+    color: #7c7c7c;
+    margin: 2rem auto 0 auto;
+}
+
+#what .l-heading span {
+    padding: 0 15px;
+    letter-spacing: 0.2rem;
+}
+
+#what .l-heading span:not(:nth-of-type(3)) {
+    border-inline-end: 2px solid #7c7c7c;
 }
 
 #what .what-items {
@@ -186,21 +212,41 @@ header {
     width: calc(33.33% - 2rem);
     padding: 1.5rem;
     margin: 1rem;
-    color: #333;
-    background: #fff;
+    color: #7c7c7c;
+    background: #1d1d1d;
     border-radius: 1rem;
-    border-bottom: 3px solid pink;
+}
+
+#what .what-item h3 {
+    background: linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#what .what-item .item-text p {
+    text-align: justify;
 }
 
 #what .what-item i {
-    background: var(--primary-color);
-    border-radius: 50%;
-    padding: 0.75rem;
+    font-size: 2rem;
+}
+
+#what .what-item:nth-of-type(3n+1) i {
+    color: #fadfa8;
+}
+
+#what .what-item:nth-of-type(3n+2) i {
+    color: #bae5f5;
+}
+
+#what .what-item:nth-of-type(3n+3) i {
+    color: #cdeebf;
 }
 
 /* Contact */
 #contact {
-    background: #222;
+    background: #090909;
 }
 
 #container {
@@ -224,8 +270,8 @@ header {
 
 .contact-content h3 {
     margin: 1rem 0;
-    color: #fff;
-    border-bottom: 2px solid var(--primary-color);
+    color: #7c7c7c;
+    border-bottom: 2px solid #1d1d1d;
     padding-bottom: 0.5rem;
 }
 
@@ -236,12 +282,12 @@ header {
 }
 
 .contact-info i {
-    color: var(--primary-color);
+    color: #7c7c7c;
     margin-right: 0.5rem;
 }
 
 .contact-info p {
-    color: #ddd;
+    color: #7c7c7c;
 }
 
 .contact-img {
@@ -253,11 +299,11 @@ header {
 /* footer */
 #footer {
     text-align: center;
-    color: #fff;
+    color: #7c7c7c;
     background: #000;
 }
 
 #footer p {
     padding: 0.5rem 0;
-    /* border-top: 2px solid #666; */
+    border-top: 2px solid #1d1d1d;
 }
