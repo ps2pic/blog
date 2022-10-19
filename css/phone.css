@@ -1,12 +1,14 @@
 /* navbar */
-#navbar{
+#navbar {
     padding: 0 0.5rem;
     justify-content: center;
 }
-#navbar .nav-logo{
+
+#navbar .nav-logo {
     display: none;
 }
-#navbar .nav-menu ul a{
+
+#navbar .nav-menu ul a {
     font-weight: 600;
     color: #eee;
     display: inline-block;
@@ -19,72 +21,98 @@
 #home img {
     margin-bottom: 1rem;
 }
-#home h1{
+
+#home h1 {
     font-size: 3.75rem;
     line-height: 3.5rem;
     letter-spacing: 0.25rem;
-    margin-bottom: 1.25rem;
     text-align: center;
 }
-#home h1 span{
-    display: none;
+
+#home h1 .col {
+    background: linear-gradient(-70deg, #2188ff 0%, #db469f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
-#home p{
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    margin-bottom: 2rem;
-}
-#home p .break{
-    display: block;
-}
-#home p span{
+
+#home h1 .bla {
     display: none;
 }
 
+#home p {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+}
+
 /* what */
-#what .what-items{
+#what .l-heading {
+    font-size: 1.3rem;
+    margin: 0.8rem auto 0.3rem auto;
+}
+
+#what .l-heading span {
+    padding: 0 10px;
+    letter-spacing: 0;
+}
+
+#what .what-items {
     display: flex;
     flex-direction: column;
 }
-#what .what-items:first-child{
+
+#what .what-items:first-child {
     margin-top: 1rem;
 }
-#what .what-items:last-child{
+
+#what .what-items:last-child {
     margin-bottom: 1rem;
 }
-#what .what-item{
+
+#what .what-item {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: calc(100% - 3rem);
     padding: 1rem;
     margin: 0.5rem 1.5rem;
-    background: #eee;
+    color: #7c7c7c;
+    background: #1d1d1d;
     border-radius: 1rem;
 }
-#what .what-item .item-text{
+
+#what .what-item .item-text {
     text-align: left;
 }
-#what .what-item .item-text h3{
+
+#what .what-item .item-text h3 {
     margin-top: 0rem;
+    font-size: 1.3rem;
 }
-#what .what-item i{
+
+#what .what-item i {
+    font-size: 1.75rem;
     margin-right: 1rem;
 }
 
 /* contact */
-#container{
+#container {
     width: 100%;
     display: flex;
     margin: 0 auto;
 }
-.contact-content{
+
+.contact-content {
     padding: 1rem 1.5rem 0 1.5rem;
 }
-.contact-content h3{
+
+.contact-content h3 {
+    font-size: 1.2rem;
     margin: 0;
     padding-bottom: 0.5rem;
 }
-.contact-img{
+
+.contact-img {
     display: none;
 }
