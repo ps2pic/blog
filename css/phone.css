@@ -8,13 +8,13 @@
     display: none;
 }
 
-#navbar .nav-menu ul a {
-    font-weight: 600;
-    color: #eee;
-    display: inline-block;
-    border-radius: 3px;
+#navbar .nav-menu ul li {
+    font-size: 1.25rem;
     padding: 0.5rem 1rem;
-    margin: 0.25rem;
+}
+
+#navbar .nav-menu ul li:nth-of-type(3) {
+    padding-right: 1rem;
 }
 
 /* home */
@@ -109,7 +109,7 @@
 }
 
 .contact-content h3 {
-    width: 100%;
+    width: calc(100% - 0.5rem);
     font-size: 1.2rem;
     margin: 0;
     padding-bottom: 0.5rem;
