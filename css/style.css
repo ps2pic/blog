@@ -244,12 +244,16 @@ header {
     color: #cdeebf;
 }
 
-#what #hot::after {
-    content: 'Hot';
+#what #hot {
+    position: relative;
+}
+
+#what #hot span {
     position: absolute;
+    top: -0.4rem;
     color: #db469f;
     font-size: 1rem;
-    margin-left: 0.4rem;
+    margin-left: 0.3rem;
     animation: shake 2s infinite;
 }
 
@@ -289,16 +293,16 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 2rem;
-    padding-left: 1rem;
+    padding: 0rem 0rem 0 1rem;
     text-align: left;
     flex: 1;
 }
 
 .contact-content h3 {
+    width: calc(100% - 1.5rem);
     margin: 1rem 0;
     color: #7c7c7c;
-    border-bottom: 2px solid #1d1d1d;
+    border-bottom: 2px solid #303030;
     padding-bottom: 0.5rem;
 }
 
