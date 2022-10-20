@@ -104,15 +104,18 @@
 }
 
 .contact-content {
-    padding: 1rem 1.5rem 0 1.5rem;
+    flex: 1;
+    padding: 1rem 0.5rem 0 1.5rem;
 }
 
 .contact-content h3 {
+    width: calc(100% - 0.5rem);
     font-size: 1.2rem;
     margin: 0;
     padding-bottom: 0.5rem;
 }
 
 .contact-img {
-    margin: 0 1.8rem 0 0;
+    flex: 1;
+    margin: 0 1.7rem 0 0;
 }
