@@ -28,10 +28,6 @@ a {
     margin: 0.75rem 0;
 }
 
-.primary-color {
-    color: var(--primary-color);
-}
-
 /* navbar */
 nav {
     background: #000;
@@ -71,30 +67,26 @@ nav {
 #navbar .nav-menu ul {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
 }
 
-#navbar .nav-menu ul a {
-    font-weight: 600;
-    color: #eee;
-    display: inline-block;
-    border-radius: 3px;
-    padding: 0.5rem;
-    margin: 0.5rem;
+#navbar .nav-menu ul li {
+    color: #9e9e9e;
+    display: block;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
 }
 
-#navbar .nav-menu ul li:last-child a {
-    margin-right: 0;
+#navbar .nav-menu ul li:nth-of-type(3) {
+    padding-right: 0;
 }
 
-#navbar .nav-menu ul a:hover {
-    color: #333;
-    background: var(--primary-color);
+#navbar .nav-menu ul li:not(:nth-of-type(1)) {
+    border-inline-start: 2px solid #303030;
 }
 
-#navbar .nav-menu ul .current {
-    background: #222;
-}
 
 /* header */
 header {
@@ -185,20 +177,6 @@ header {
 
 }
 
-#what .l-heading {
-    color: #7c7c7c;
-    margin: 2rem auto 0 auto;
-}
-
-#what .l-heading span {
-    padding: 0 15px;
-    letter-spacing: 0.2rem;
-}
-
-#what .l-heading span:not(:nth-of-type(3)) {
-    border-inline-end: 2px solid #7c7c7c;
-}
-
 #what .what-items {
     display: flex;
     max-width: 960px;
@@ -215,6 +193,34 @@ header {
     color: #9e9e9e;
     background: #303030;
     border-radius: 1rem;
+}
+
+#what .what-item:nth-of-type(-n+3) {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#what .what-item:nth-of-type(-n+3) .top {
+    position: absolute;
+    right: -2.5rem;
+    top: 0.7rem;
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 0.1rem 3rem;
+    transform: rotate(45deg);
+}
+
+#what .what-item:nth-of-type(1) .top {
+    background: #db469f;
+}
+
+#what .what-item:nth-of-type(2) .top {
+    background: #46db82;
+}
+
+#what .what-item:nth-of-type(3) .top {
+    background: #a746db;
 }
 
 #what .what-item h3 {
@@ -301,7 +307,7 @@ header {
 .contact-content h3 {
     width: calc(100% - 1.5rem);
     margin: 1rem 0;
-    color: #7c7c7c;
+    color: var(--primary-color);
     border-bottom: 2px solid #303030;
     padding-bottom: 0.5rem;
 }
@@ -338,4 +344,8 @@ header {
 #footer p {
     padding: 0.5rem 0;
     border-top: 2px solid #1d1d1d;
+}
+
+#footer p span {
+    color: var(--primary-color);
 }
