@@ -129,7 +129,7 @@ header {
 
 #home h1 span.col {
 
-    background: linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: linear-gradient(-70deg, #db469f 10%, #2188ff 90%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -212,13 +212,13 @@ header {
     width: calc(33.33% - 2rem);
     padding: 1.5rem;
     margin: 1rem;
-    color: #7c7c7c;
-    background: #1d1d1d;
+    color: #9e9e9e;
+    background: #303030;
     border-radius: 1rem;
 }
 
 #what .what-item h3 {
-    background: linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+    background: linear-gradient(70deg, #a2facf 10%, #64acff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -282,7 +282,8 @@ header {
 }
 
 .contact-info i {
-    color: #7c7c7c;
+    font-size: 1rem;
+    color: var(--primary-color);
     margin-right: 0.5rem;
 }
 
