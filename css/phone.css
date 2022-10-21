@@ -47,16 +47,6 @@
 }
 
 /* what */
-#what .l-heading {
-    font-size: 1.3rem;
-    margin: 0.8rem auto 0.3rem auto;
-}
-
-#what .l-heading span {
-    padding: 0 10px;
-    letter-spacing: 0;
-}
-
 #what .what-items {
     display: flex;
     flex-direction: column;
@@ -79,7 +69,7 @@
     margin: 0.5rem 1.5rem;
     color: #9e9e9e;
     background: #303030;
-    border-radius: 1rem;
+    border-radius: 0.8rem;
 }
 
 #what .what-item .item-text {
