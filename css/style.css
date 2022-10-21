@@ -157,7 +157,6 @@ header {
 
 #home button:hover {
     background: var(--secondary-color);
-    color: #fff;
 }
 
 #home button a:link,
