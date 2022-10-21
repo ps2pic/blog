@@ -145,7 +145,7 @@ header {
 #home button {
     border: none;
     border-radius: 5px;
-    background: #fff;
+    background: var(--primary-color);
 }
 
 #home a {
@@ -156,7 +156,7 @@ header {
 }
 
 #home button:hover {
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 5px;
 }
 
