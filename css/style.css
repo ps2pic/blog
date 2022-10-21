@@ -1,5 +1,6 @@
 :root {
-    --primary-color: #f6e0a7;
+    --primary-color: #fadfa8;
+    --secondary-color: #db469f;
 }
 
 /* reset */
@@ -212,23 +213,13 @@ header {
     transform: rotate(45deg);
 }
 
-#what .what-item:nth-of-type(1) .top {
-    background: #db469f;
+#what .what-item .top {
+    background: var(--secondary-color);
 }
 
-#what .what-item:nth-of-type(2) .top {
-    background: #64acff;
-}
-
-#what .what-item:nth-of-type(3) .top {
-    background: #a746db;
-}
 
 #what .what-item h3 {
-    background: linear-gradient(70deg, #a2facf 10%, #64acff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--primary-color);
 }
 
 #what .what-item .item-text p {
@@ -240,7 +231,7 @@ header {
 }
 
 #what .what-item:nth-of-type(3n+1) i {
-    color: #fadfa8;
+    color: var(--primary-color);
 }
 
 #what .what-item:nth-of-type(3n+2) i {
@@ -258,7 +249,7 @@ header {
 #what #hot span {
     position: absolute;
     top: -0.3rem;
-    color: #db469f;
+    color: var(--secondary-color);
     font-size: 1rem;
     margin-left: 0.3rem;
     animation: shake 2s infinite;
