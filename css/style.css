@@ -173,23 +173,22 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0 auto;
-
 }
 
 #what .what-items {
-    display: flex;
-    max-width: 960px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    width: 960px;
+    padding: 1rem;
 }
 
 #what .what-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(33.33% - 2rem);
     padding: 1.5rem;
-    margin: 1rem;
     color: #9e9e9e;
     background: #303030;
     border-radius: 1rem;
@@ -274,30 +273,30 @@ header {
 
 /* Contact */
 #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #090909;
 }
 
 #container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    overflow: hidden;
-    max-width: 960px;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    grid-template-areas: 'contact-content contact-img contact-img';
+    width: 960px;
+    padding: 0 1rem;
 }
 
 .contact-content {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0rem 0rem 0 1rem;
     text-align: left;
-    flex: 1;
+    grid-area: contact-content;
 }
 
 .contact-content h3 {
-    width: calc(100% - 1.5rem);
-    margin: 1rem 0;
     color: var(--primary-color);
     border-bottom: 2px solid #303030;
     padding-bottom: 0.5rem;
@@ -312,7 +311,7 @@ header {
 .contact-info i {
     font-size: 1rem;
     color: var(--primary-color);
-    margin-right: 0.5rem;
+    margin-right: 0.75rem;
 }
 
 .contact-info p {
@@ -320,9 +319,9 @@ header {
 }
 
 .contact-img {
-    margin: 0 1rem;
-    flex: 2;
-    background: url(../image/contact_bg.jpg) no-repeat center 30%/cover;
+    background: url(../image/contact_bg.jpg) no-repeat center 32.5%/cover;
+    grid-area: contact-img;
+    border-radius: 1rem;
 }
 
 /* footer */
