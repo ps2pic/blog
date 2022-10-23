@@ -1,0 +1,29 @@
+/* navbar */
+#navbar {
+    width: calc(100% - 2.5rem);
+    padding: 0 0.5rem;
+    justify-content: center;
+}
+
+#navbar .nav-logo {
+    display: none;
+}
+
+#navbar .nav-menu ul li:nth-of-type(3) {
+    padding-right: 1rem;
+}
+
+/* what */
+#what .what-items {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 2.5rem);
+    margin: auto;
+}
+
+/* Contact */
+#container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'contact-content contact-img';
+    width: calc(100% - 2.5rem);
+
+}
