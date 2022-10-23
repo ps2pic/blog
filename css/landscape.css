@@ -1,1 +1,19 @@
+/* navbar */
+#navbar {
+    width: calc(100% - 5rem);
+}
 
+/* what */
+#what .what-items {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 5rem);
+    margin: auto;
+}
+
+/* Contact */
+#container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'contact-content contact-img';
+    width: calc(100% - 5rem);
+
+}
