@@ -314,8 +314,10 @@ header {
     margin-right: 0.75rem;
 }
 
-.contact-info p {
+.contact-info h1 {
     color: #7c7c7c;
+    font-weight: normal;
+    font-size: 1.1rem;
 }
 
 .contact-img {
